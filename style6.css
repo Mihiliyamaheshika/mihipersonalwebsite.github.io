@@ -1,0 +1,45 @@
+body {
+    background-color: azure;
+}
+
+h1{
+    text-align: center;
+    text-transform: uppercase;
+    color:darkblue;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+p{
+    font-size: larger;
+    font-family: cursive;
+}
+#pic{
+    float: right;
+    border: 1px solid blue;
+    border-radius: 4px;
+    padding: 5px;
+    width: 300px;
+}
+.gallery{
+    width:250px;
+    height: 400px;
+}
+
+
+.gallery:hover {
+   
+    transform:rotate(25deg);
+}
+
+
+    .gallery1{
+        width:250px;
+        height: 180px;
+    }
+    
+    
+    .gallery1:hover {
+       
+        transform:rotate(25deg);
+    }

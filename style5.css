@@ -1,0 +1,53 @@
+body{
+    background:url(vase.jpeg);
+
+}
+
+
+
+
+
+.column-2a {
+   border: 2px;
+  float:center;
+  width: 35%;
+  padding: 10px;
+  padding-left:50px;
+  padding-right: 50px;
+  padding-bottom:10px;
+  height:400px;
+  margin:10px;
+  margin-right:10px;
+  margin-bottom: 20px;
+  background-color:white;
+  list-style:circle ;
+  display: grid;
+  grid-template-columns:auto;
+  
+}
+
+.column-2a h2{
+    font-weight: 500;
+    font-size: 2rem;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: darkblue;
+
+}
+
+.column-2a .table-style{
+    border: 2px;
+    border-color: black;
+    font-size: 1.1rem;
+  
+}
+
+.column-2a .table-style tr {
+    padding-top: 10px;
+    font-weight: 400;
+}
+
+.column-2a .table-style .tr .td{
+      padding: 15px;
+
+}
