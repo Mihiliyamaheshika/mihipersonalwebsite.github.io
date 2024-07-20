@@ -27,11 +27,14 @@ p{
 }
 
 
-.gallery:hover {
-   
-    transform:rotate(25deg);
+.gallery {
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
+.gallery:hover {
+    transform: scale(1.05) translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
 
     .gallery1{
         width:250px;
@@ -41,5 +44,6 @@ p{
     
     .gallery1:hover {
        
-        transform:rotate(25deg);
+        transform: scale(1.05) translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
     }
