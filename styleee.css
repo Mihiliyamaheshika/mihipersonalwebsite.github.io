@@ -95,23 +95,77 @@
  }
 
 
-button 
-{
- margin-top: 10px; 
- font-size: 1.1em;
- background-color:lightslategray;
- color: aliceblue;
- border: 2px solid black;
- box-shadow: 4px 4px 4px #999999;
+ button {
+    margin-top: 10px;
+    font-size: 1em; /* Slightly smaller font size */
+    background-color: rgb(202, 153, 102);
+    color: aliceblue;
+    border: 2px solid rgb(202, 153, 102);
+    border-radius: 5px; /* Adding rounded corners */
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.2); /* Smoother shadow with transparency */
+    padding: 8px 16px; /* Reducing padding for a smaller size */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    transition: background-color 0.3s, box-shadow 0.3s; /* Smooth transition effects */
+}
 
+button:hover {
+    background-color: rgb(182, 138, 92); /* Slightly darker shade on hover */
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.4); /* Slightly more intense shadow on hover */
+}
+
+button:focus {
+    outline: none; /* Remove default focus outline */
+    box-shadow: 0 0 5px 2px rgba(202, 153, 102, 0.5); /* Custom focus effect */
 }
 
 
-.button:hover, button:focus, button:active
-{
- color:#EBF5FF;
- background-color: #4312AE;
- cursor: pointer;
-
-
-}
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+  
+  .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 400px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  }
+  
+  .modal-header {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    font-weight: 900;
+  }
+  
+  .modal-body {
+    font-size: 1em;
+    margin-bottom: 20px;
+  }
+  
+  .modal-footer {
+    text-align: right;
+  }
+  
+  .close {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .close:hover {
+    background-color: #45a049;
+  }
