@@ -1,95 +1,85 @@
-body
- {
-    background-color:black;
- }
-
-
-.about
-{
-    background:url(dot.jpg);
-    width:80%;
-}
-.heading
-{
-  text-align: center;
-  margin: 0 6rem;
-  font-size: 4rem;
-  padding: .1rem solid #fff4ff;
-  color: #fff;
-  background-color: black;
-
+body {
+    background-color: #f4f4f4; /* Light gray background for a professional look */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Modern and clean font */
+    margin: 0;
+    padding: 0;
+    color: #333; /* Darker text color for better readability */
 }
 
+.about {
+    background-color: #ffffff; /* White background for the section */
+    width: 80%;
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.heading {
+    text-align: center;
+    font-size: 2.5rem; /* Slightly smaller for a cleaner look */
+    color: #333;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #007BFF; /* Blue underline for emphasis */
+    padding-bottom: 10px;
+}
 
 .heading span {
-   color:yellow;
+    color: #007BFF; /* Blue color for emphasis */
+    font-weight: bold; /* Bold text for emphasis */
 }
 
 .about .row {
-    display:flex;
-    
+    display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    flex-wrap: wrap;
-    padding: 1rem 0;
+    gap: 20px;
 }
 
-
-.about .row .info{
-    flex: 1 1 48rem;
-    padding: 2rem 1rem;
-    padding-left: 6rem;
+.about .row .info {
+    flex: 1 1 auto;
+    padding: 20px;
+    text-align: left;
 }
 
-
-.about .row .info h3{
-     font-size: 2rem;
-     color:yellow;
-     padding: 1rem 0;
-     font-weight: normal;
-
+.about .row .info h3 {
+    font-size: 1.25rem; /* Slightly smaller for a cleaner look */
+    color: #007BFF; /* Blue for labels */
+    margin: 10px 0;
+    font-weight: 400; /* Normal weight for readability */
 }
 
-.about .row .info h3 span{
-   color: #eee;
-   padding: 0.5rem;
-
+.about .row .info h3 span {
+    color: #555; /* Dark gray for less emphasis */
+    font-weight: 600; /* Slightly bold for labels */
 }
 
-
-
-
-
-
-.about .row .counter{
-    flex: 1 1 48rem;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-
+.about .row .info a {
+    color: #007BFF; /* Blue for links */
+    text-decoration: none; /* Remove underline */
 }
 
-.about .row .counter span{
-    width:20rem;
-   color: #fff;
-   text-align: center;
-   padding: 2rem;
-   margin: 2rem;
-  
-
+.about .row .info a:hover {
+    text-decoration: underline; /* Add underline on hover */
 }
 
-.p{
-   color: #fff;
-   font-size: 1rem;
-   background-color:black;
+.p {
+    color: #333;
+    font-size: 1rem;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+    margin-top: 20px;
+    line-height: 1.6; /* Improved readability with increased line height */
 }
 
-img {
+.profile-pic {
     border-radius: 50%;
-    width: 30%;
-    height:30%;
+    width: 120px; /* Adjusted size */
+    height: 120px; /* Adjusted size */
     object-fit: cover;
-    float:right;
-    float: inherit;
+    margin-top: 20px;
 }
