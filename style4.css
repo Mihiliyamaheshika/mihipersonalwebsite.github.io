@@ -78,8 +78,11 @@ body {
 
 .profile-pic {
     border-radius: 50%;
-    width: 120px; /* Adjusted size */
-    height: 120px; /* Adjusted size */
+    width: 150px; /* Adjusted size */
+    height: 150px; /* Adjusted size */
     object-fit: cover;
-    margin-top: 20px;
+    margin: 20px 0; /* Centered margin for better spacing */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
