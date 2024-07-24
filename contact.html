@@ -6,7 +6,7 @@
     <title>Contact me</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
         integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />"
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <link rel="stylesheet" type="text/css" href="styleee.css">
 
@@ -95,8 +95,7 @@
                     <div class="icon"><i class="fa fa-facebook-official" aria-hidden="true"></i></i></div>
                     <div class="text">
                         <h3>Facebook</h3>
-                        <p>Mi Maheshi</p>
-
+                        <a href= "https://www.facebook.com/profile.php?id=100071643267186&mibextid=ZbWKwL">Mi Maheshi</a>
                     </div>
 
                 </div>
@@ -109,7 +108,7 @@
                     <div class="icon"><i class="fa fa-instagram" aria-hidden="true"></i></i></div>
                     <div class="text">
                         <h3>Instergram</h3>
-                        <p>Mi Maheshi</p>
+                        <a href= "https://www.instagram.com/mi_maheshi_?igsh=eG1xdnpnOXYxYnY1">Mi Maheshi</a>
 
                     </div>
 
@@ -119,15 +118,38 @@
         </div>
 
  <div class="p">If you want to contact me urgently. <br>Please use this contact number and email address</div>
-   
- <button onclick="myFunction()">Click here to get contact number and webmail</button>
- ​
- <script>
- function myFunction() {
-   alert("Call-+94 764537427 or webmail- maheshikamam.21@uom.lk");
- }
- </script>
 
+ ​
+ <button onclick="myFunction()">Click here to get contact number and webmail</button>
+
+ <div id="myModal" class="modal">
+   <div class="modal-content">
+     <div class="modal-header">Contact Information</div>
+     <div class="modal-body">
+       Call:   +94 764537427<br>
+       Webmail:  maheshikamam.21@uom.lk
+     </div>
+     <div class="modal-footer">
+       <button class="close" onclick="closeModal()">Close</button>
+     </div>
+   </div>
+ </div>
+ 
+ <script>
+   function myFunction() {
+     document.getElementById('myModal').style.display = 'block';
+   }
+ 
+   function closeModal() {
+     document.getElementById('myModal').style.display = 'none';
+   }
+ 
+   window.onclick = function(event) {
+     if (event.target == document.getElementById('myModal')) {
+       closeModal();
+     }
+   }
+ </script>
         
      
      </section>
@@ -156,6 +178,8 @@
 
 
 </body>
+
+
 
 
 
